@@ -2,6 +2,8 @@
 
 Liscence Plate Recognition using opencv and Optical Character Recognition API. 
 
+This was a team project, created by me and @reetsethi in our 2nd year of B.Tech.
+
 ## APPROACH AND WORKING
 
 There are three main steps to consider here.
