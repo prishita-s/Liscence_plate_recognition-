@@ -35,10 +35,7 @@ As you go through the network and go through more conv. layers, you get activati
 
 Here is the snippet of our code for reference.
 
-
-
-
-The model has the following layers:
+![alt text](https://github.com/prishita-s/Liscence_plate_recognition-/blob/main/images/code%20snippet%201.jpg)
 
 The model is then trained using stochastic gradient descent and requires an appropriate loss function when designing and configuring your model. There are many loss functions to choose from or even what a loss function is and the role it plays when training a neural network. The Adam loss function is used here, to optimize the weights and mean squared error. 
 
@@ -50,6 +47,7 @@ Where, m — moment, X -random variable.
 
 Adam to optimize the weights and mean squared error as our loss function.
 
+![alt text](https://github.com/prishita-s/Liscence_plate_recognition-/blob/main/images/adam%20optimiser.jpg)
 
 ## Training
 
@@ -64,35 +62,28 @@ In our case, the Number of elements = 232
                      Step Size = 7.2 (approx 7)
 
 Here is the extract from the code that we’ve used to train our dataset.
-
+![alt text](https://github.com/prishita-s/Liscence_plate_recognition-/blob/main/images/code%20snippet%202%20(training).jpg)
 
 ### Model Loss
 
 The model's success over the validation data is almost 80%. However, we can see that from the above figure, the training has stopped after the 30th epoch. This may occur because of the low number of training samples, or my model is not capable of learning such data. 
 
+![alt text](https://github.com/prishita-s/Liscence_plate_recognition-/blob/main/images/code%20snippet%203(model%20loss).jpg)
 
 ## Testing
 
 The remaining 20% of the dataset undergoes testing 
 
-
-
+![alt text](https://github.com/prishita-s/Liscence_plate_recognition-/blob/main/images/code%20snippet%204(testing).jpg)
 
 The detected license plates were as follows:
-
-                
-
                       
-
+![alt text](https://github.com/prishita-s/Liscence_plate_recognition-/blob/main/images/detected%20plates.jpg)
 
 ## Text Recognition using OCR API
 
 A simple and basic approach is applied to recognize the text on the license plate. A glimpse of the code is here:
 
-
-
-
-
-
+![alt text](https://github.com/prishita-s/Liscence_plate_recognition-/blob/main/images/code%20snippet%205(recognition).jpg)
 
 The basic concept is that a request is sent to the API using a request .post() and an API-key which when receives the request i.e. an encoded image, processes the encoded image and returns the encoded result. This encoded result is decoded. The json.loads() method is used to make it easier to parse the results. Now we are with our desired results.
